@@ -1,0 +1,124 @@
+# Virtual Hosts
+#
+<VirtualHost *:80>
+  ServerName localhost
+  ServerAlias localhost
+  DocumentRoot "${INSTALL_DIR}/www"
+  <Directory "${INSTALL_DIR}/www/">
+    Options +Indexes +Includes +FollowSymLinks +MultiViews
+    AllowOverride All
+    Require local
+  </Directory>
+</VirtualHost>
+
+<VirtualHost *:80> 
+    ServerName clientbox.com 
+    ServerAlias www.clientbox.com 
+    DocumentRoot "C:\wamp64\www\ClientBox" 
+    <Directory "C:\wamp64\www\ClientBox"> 
+        Options Indexes FollowSymLinks MultiViews 
+        AllowOverride All 
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:80> 
+    ServerName sd.test 
+    ServerAlias www.sd.test 
+    DocumentRoot "C:\wamp64\www\PackageTest\public" 
+    <Directory "C:\wamp64\www\PackageTest\public"> 
+        Options Indexes FollowSymLinks MultiViews 
+        AllowOverride All 
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:80> 
+    ServerName u1.sd.test 
+    ServerAlias www.u1.sd.test 
+    DocumentRoot "C:\wamp64\www\PackageTest\public" 
+    <Directory "C:\wamp64\www\PackageTest\public"> 
+        Options Indexes FollowSymLinks MultiViews 
+        AllowOverride All 
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:80> 
+    ServerName u2.sd.test 
+    ServerAlias www.u2.sd.test 
+    DocumentRoot "C:\wamp64\www\PackageTest\public" 
+    <Directory "C:\wamp64\www\PackageTest\public"> 
+        Options Indexes FollowSymLinks MultiViews 
+        AllowOverride All 
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:80> 
+    ServerName u3.sd.test 
+    ServerAlias www.u3.sd.test 
+    DocumentRoot "C:\wamp64\www\PackageTest\public" 
+    <Directory "C:\wamp64\www\PackageTest\public"> 
+        Options Indexes FollowSymLinks MultiViews 
+        AllowOverride All 
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:80> 
+    ServerName 1businesscrm.in 
+    ServerAlias www.1businesscrm.in 
+    DocumentRoot "C:\wamp64\www\1businesscrm" 
+    <Directory "C:\wamp64\www\1Businesscrm"> 
+        Options Indexes FollowSymLinks MultiViews 
+        AllowOverride All 
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:80> 
+    ServerName user1.1businesscrm.in 
+    ServerAlias www.user1.1businesscrm.in 
+    DocumentRoot "C:\wamp64\www\1businesscrm" 
+    <Directory "C:\wamp64\www\1Businesscrm"> 
+        Options Indexes FollowSymLinks MultiViews 
+        AllowOverride All 
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:80> 
+    ServerName user2.1businesscrm.in 
+    ServerAlias www.user2.1businesscrm.in 
+    DocumentRoot "C:\wamp64\www\1businesscrm" 
+    <Directory "C:\wamp64\www\1Businesscrm"> 
+        Options Indexes FollowSymLinks MultiViews 
+        AllowOverride All 
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:80> 
+    ServerName user3.1businesscrm.in 
+    ServerAlias www.user3.1businesscrm.in 
+    DocumentRoot "C:\wamp64\www\1businesscrm" 
+    <Directory "C:\wamp64\www\1Businesscrm"> 
+        Options Indexes FollowSymLinks MultiViews 
+        AllowOverride All 
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:80> 
+    ServerName user4.1businesscrm.in 
+    ServerAlias www.user4.1businesscrm.in 
+    DocumentRoot "C:\wamp64\www\1businesscrm" 
+    <Directory "C:\wamp64\www\1Businesscrm"> 
+        Options Indexes FollowSymLinks MultiViews 
+        AllowOverride All 
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+

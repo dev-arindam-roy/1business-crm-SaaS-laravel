@@ -1,0 +1,34 @@
+.mt-2 {
+    margin-top: 20px;
+}
+.mt-1 {
+    margin-top: 10px;
+}
+.mt--1 {
+    margin-top: -10px;
+}
+.ml-5 {
+    margin-left: 5px;
+}
+.input-error-block {
+    color: #E43A45;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+}
+.pwd-eye {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    z-index: 999;
+}
+.password {
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+}
+.input-group-addon > i, .pwd-eye > i {
+    color: #000000 !important;
+}
+.note.note-success hr {
+    border-top: 1px solid #1ad0d0 !important;
+}
